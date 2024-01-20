@@ -1,0 +1,114 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <h1 id="title"> Book Survey Form</h1>
+      <p id="description">Please fill out this form with required details</p>
+     <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <form id="survey-form">
+  <fieldset>
+    <legend>Personal Details</legend>
+    <label id="name-label">Enter Your name: <input id="name" type="text" required placeholder="Your name"></label>
+    <label id="email-label">Enter Your Email: <input type="email" id="email" required placeholder="email id"></label>
+    <label id="number-label">Enter Your Age: <input type="number" id="number" min="16" max="60" placeholder="Age" required></label>
+  </fieldset>
+  <fieldset>
+    <legend>Gender</legend>
+    <label><input type="radio" name="gender" value="female" class="inline" checked> Female</label><br>
+    <label><input type="radio" name="gender" value="male"
+    class="inline"> Male</label> <br>
+    <label><input type="radio" name="gender" value="other" class="inline"> Other</label>
+  </fieldset>
+  <fieldset>
+    <legend>Book Details</legend>
+    <label>Book Name: <input type="text" id="name" required placeholder="Book name"></label>
+    <label>Author Name: <input type="text" id="name" required placeholder="Author name"></label>
+    <label> Book Status: 
+      <select id="dropdown">
+        <option>(select one)</option>
+        <option>Completed</option>
+        <option>To be read</option>
+        <option>Paused</option>
+        <option>Gave up</option>
+      </select>
+    </label>
+    <label>About the book
+      <textarea></textarea>
+    </label>
+  </fieldset>
+  <label>
+    <input type="checkbox" class="inline" checked value="filled" name="filled">Filled all the details</label> <br>
+    <label>
+    <input type="checkbox" class="inline" checked value="tandc" name="tandc">I accept the terms and conditions
+  </label>
+      <input type="submit" value="Submit" id="submit"/>
+      </form>
+    </body>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #1b1b32;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+
+
+input,
+textarea,
+select {
+  margin: 5px 0 0 0;
+  width: 100%;
+  min-height: 0;
+}
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+}
+.inline{
+  display: inline; 
+}
+
+
+** end of undefined **
+
